@@ -21,7 +21,7 @@
 <h3 align="center">SOC IN MY POCKET</h3>
 
   <p align="center">
-   THIS IS MY MAIN PROJECT
+   To be a part of y'all
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -56,9 +56,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -72,7 +70,7 @@
 </div>
 
 <div align="center"> 
-  Bird's Eye View of my SOC Infrastructure (till 10/2024)
+  Bird's Eye View of my SOC Infrastructure (Oct/2024)
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
