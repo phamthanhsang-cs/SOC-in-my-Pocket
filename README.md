@@ -71,7 +71,9 @@
   <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/birdseyeview.png" alt="screenshot" />
 </div>
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+<div align="center"> 
+  Bird's Eye View of my SOC Infrastructure (till 10/2024)
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,16 +196,16 @@ Project Link: [https://github.com/phamthanhsang-cs/SOC-in-my-Pocket](https://git
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/phamthanhsang-cs/SOC-in-my-Pocket.svg?style=for-the-badge
+[contributors-url]: https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/phamthanhsang-cs/SOC-in-my-Pocket.svg?style=for-the-badge
+[forks-url]: https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/network/members
+[stars-shield]: https://img.shields.io/github/stars/phamthanhsang-cs/SOC-in-my-Pocket.svg?style=for-the-badge
+[stars-url]: https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/stargazers
+[issues-shield]: https://img.shields.io/github/issues/phamthanhsang-cs/SOC-in-my-Pocket.svg?style=for-the-badge
+[issues-url]: https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/issues
+[license-shield]: https://img.shields.io/github/license/phamthanhsang-cs/SOC-in-my-Pocket.svg?style=for-the-badge
+[license-url]: https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/phamthanhsang0311/
 [OPNSense]: https://img.shields.io/badge/OPNSense-%23004880.svg?style=for-the-badge&logo=opnsense&logoColor=white
