@@ -1,4 +1,4 @@
-# Open-Source SOC 
+# SOC IN MY POCKET
 
 <a id="readme-top"></a>
 
@@ -18,7 +18,7 @@
     <img src="images/blueteam.png" alt="Logo" width="150" height="150">
   </a>
 
-<h3 align="center">SOC IN MY POCKET</h3>
+<h3 align="center">Security / SOC Analyst</h3>
 
   <p align="center">
    To be a part of y'all
@@ -47,7 +47,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#introduction">Introduction</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -93,10 +93,9 @@
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Introduction
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+SOC in my Pocket (SOCIMP) is my main project about Cybersecurity so far
 
 ### Prerequisites
 
