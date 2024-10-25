@@ -95,7 +95,8 @@
 <!-- GETTING STARTED -->
 ## Introduction
 
-SOC in my Pocket (SOCIMP) is my main project about Cybersecurity so far
+SOC in My Pocket (SOCIMP) is my flagship project in cybersecurity so far. This basic SOC project is designed for Security and SOC Analysts, centered around the core pillars of People, Process, and Technologies (PPT) – the foundation of effective SOC operations. By focusing on adversaries' Tactics, Techniques, and Procedures (TTPs) for threat detection and response, SOCIMP helps me learn how to proactively defend against complex cyber threats. With its advanced monitoring, automation, and response capabilities, this SOC setup showcases my knowledge of cybersecurity and reflects my vision about a safer digital world for everyone.
+
 
 ### Prerequisites
 
@@ -130,11 +131,6 @@ See the [open issues](https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issue
 
 <!-- CONTRIBUTING -->
 ## Contributing
-
-
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Top contributors:
