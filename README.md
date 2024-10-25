@@ -95,7 +95,7 @@
 <!-- GETTING STARTED -->
 ## Introduction
 
-**SOC in My Pocket (SOCIMP)** is my very first and flagship project in cybersecurity so far. This basic SOC project is designed for **Security and SOC Analysts**, centered around the core pillars of **People, Process, and Technologies (PPT)** – the foundation of effective SOC operations.
+**SOC in My Pocket (SOCIMP)** is my very first and flagship cybersecurity project so far. This basic SOC project is designed for **Security and SOC Analysts**, centered around the core pillars of **People, Process, and Technologies (PPT)** – the foundation of effective SOC operations.
 
 By focusing on adversaries' **Tactics, Techniques, and Procedures (TTPs)** for threat detection and response, SOCIMP helps me learn how to proactively defend against complex cyber threats. 
 
@@ -103,8 +103,27 @@ With its advanced monitoring, automation, and response capabilities, this SOC se
 
 
 ### Prerequisites
+***2 THINGS: ME AND A DEDICATED WORKSTAION***
+
+Since SOCIMP includes essential SOC components designed to deliver comprehensive cybersecurity operations:
+
+- **SIEM**: The Elastic Stack is my SIEM solution of choice. All logs and data sources (Workstations: Windows/Linux, Servers, Firewalls, Cloud, Web Applications, etc.) are forwarded into the Elastic Stack and centrally managed through a Fleet Server.
+  
+- **EDR**: Elastic Agent, integrated with Elastic Defend, provides robust endpoint detection and response (EDR) capabilities that work seamlessly within the Elastic ecosystem.
+
+- **SOAR**: Tools like **Shuffle**, **TheHive**, and **Cortex** offer high levels of automation, flexibility, and extensive integration across various components for streamlined security operations and incident response.
+
+- **CTI**: **MISP** is a powerful threat intelligence platform that integrates smoothly with TheHive and Cortex for effective incident enrichment. **OpenCTI** enhances this with visually rich dashboards and multiple connectors to gather comprehensive threat intelligence data.
+
+- **Firewall**: I opted for **OPNSense**, which offers a user-friendly dashboard, advanced traffic inspection, and a variety of built-in security features to protect the network.
 
 
+The SOCIMP project is built on a PC powered by:
+- **CPU**: Intel Xeon (18 cores / 36 threads)
+- **RAM**: 96 GB
+- **Storage**: 2 TB SSD
+
+This infrastructure hosts multiple VMs and containers, ensuring scalability and performance across all SOC components.
 
 ### Installation
 
