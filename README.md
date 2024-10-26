@@ -50,11 +50,11 @@
       <a href="#introduction">Introduction</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#atomicredteam">AtomicRedTeam</a></li>
+        <li><a href="#adversary-emulation">Adversary Emulation</a></li>
       </ul>
     </li>
     <li><a href="#incident-response">Incident Response</a></li>
-    <li><a href="#let'sgo">Let's go</a></li>
+    <li><a href="#lets-go">Let's go</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
