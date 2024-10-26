@@ -14,7 +14,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket">
+  <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket">
     <img src="images/blueteam.png" alt="Logo" width="150" height="150">
   </a>
 
@@ -23,14 +23,14 @@
   <p align="center">
    To be a part of y'all
     <br />
-    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket">My Demo</a>
+    <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket">My Demo</a>
     ·
-    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues/new?labels=bug&template=bug-report---.md">Your Suggestion / Review</a>
+    <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/issues/new?labels=bug&template=bug-report---.md">Your Suggestion / Review</a>
     ·
-    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues/new?labels=enhancement&template=feature-request---.md">Other Projects</a>
+    <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/issues/new?labels=enhancement&template=feature-request---.md">Other Projects</a>
   </p>
 </div>
 
