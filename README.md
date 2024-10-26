@@ -125,10 +125,12 @@ To serve those things, the SOCIMP project is built on a PC powered by:
 
 This infrastructure hosts multiple VMs and containers, ensuring scalability and performance across all SOC components.
 
-### AtomicRedTeam
-For **adversary emulation**, i choose to use [**AtomicRedTeam**](https://github.com/redcanaryco/atomic-red-team), very lightweight, portable and quickly to test my enviroment.
+## Adversary Emulation
 
-***You could see [Caldera](https://github.com/mitre/caldera) in the future***
+For **adversary emulation**, I chose to use **[Atomic Red Team](https://atomicredteam.io/)**. It’s lightweight, portable, and allows me to quickly test my environment.
+
+*In the future, I may also explore **[Caldera](https://caldera.mitre.org/)** for more advanced adversary simulation capabilities.*
+
 
 
 
