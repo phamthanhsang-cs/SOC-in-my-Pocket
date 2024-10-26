@@ -26,11 +26,11 @@
     <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket">View Demo</a>
+    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket">My Demo</a>
     ·
-    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues/new?labels=bug&template=bug-report---.md">Your Suggestion / Review</a>
     ·
-    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues/new?labels=enhancement&template=feature-request---.md">Other Projects</a>
   </p>
 </div>
 
@@ -142,7 +142,20 @@ For **adversary emulation**, I chose to use **[Atomic Red Team](https://atomicre
 
 
 ## Incident Response
-Im relying on NIST Framework for handling Security Incident, its well structured
+
+For incident response, I rely on the well-structured **NIST Framework** to handle security incidents effectively. This framework provides a standardized approach, ensuring a thorough and consistent response to potential security threats. The NIST Incident Response Lifecycle includes four main stages:
+
+1. **Preparation** – Establishing and maintaining an incident response capability. This involves creating an incident response policy, identifying resources, and training the response team.
+
+2. **Detection and Analysis** – Monitoring systems to detect suspicious activities and analyzing potential incidents. This stage focuses on identifying and validating incidents accurately to minimize false positives.
+
+3. **Containment, Eradication, and Recovery** – Limiting the impact of the incident, eliminating the root cause, and restoring systems to normal operation. This stage is crucial for controlling the spread and impact of the incident on the organization.
+
+4. **Post-Incident Activity** – Learning from the incident to improve future responses. This involves documenting the incident, conducting a post-mortem analysis, and updating policies and procedures.
+
+See more details on **[NIST Framework Incident Response](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/external-documents/NIST-Framework-for-IR.pdf)**. Following this structured approach allows me to respond to incidents efficiently and continuously improve my SOCIMP project’s security posture.
+
+*NOTE: You could follow SANS Framework instead or maybe both dependancy*
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
