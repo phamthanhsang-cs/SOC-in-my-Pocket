@@ -50,10 +50,10 @@
       <a href="#introduction">Introduction</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#atomicredteam">AtomicRedTeam</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#incident-response">Incident Response</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -118,14 +118,17 @@ Since SOCIMP includes essential SOC components designed to deliver comprehensive
 - **Firewall**: I opted for **OPNSense**, which offers a user-friendly dashboard, advanced traffic inspection, and a variety of built-in security features to protect the network.
 
 
-The SOCIMP project is built on a PC powered by:
+To serve those things, the SOCIMP project is built on a PC powered by:
 - **CPU**: Intel Xeon (18 cores / 36 threads)
 - **RAM**: 96 GB
 - **Storage**: 2 TB SSD
 
 This infrastructure hosts multiple VMs and containers, ensuring scalability and performance across all SOC components.
 
-### Installation
+### AtomicRedTeam
+For **adversary emulation**, i choose to use [**AtomicRedTeam**](https://github.com/redcanaryco/atomic-red-team), very lightweight, portable and quickly to test my enviroment.
+
+***You could see [Caldera](https://github.com/mitre/caldera) in the future***
 
 
 
@@ -133,17 +136,16 @@ This infrastructure hosts multiple VMs and containers, ensuring scalability and 
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+## Incident Response
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+
+## Let's go
 
 
 See the [open issues](https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues) for a full list of proposed features (and known issues).
