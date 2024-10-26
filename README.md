@@ -142,6 +142,7 @@ For **adversary emulation**, I chose to use **[Atomic Red Team](https://atomicre
 
 
 ## Incident Response
+Im relying on NIST Framework for handling Security Incident, its well structured
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
