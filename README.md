@@ -103,7 +103,7 @@ With its advanced monitoring, automation, and response capabilities, this SOC se
 
 
 ### Prerequisites
-***2 THINGS: ME AND A DEDICATED WORKSTAION***
+***2 THINGS: ME AND A DEDICATED WORKSTATION***
 
 Since SOCIMP includes essential SOC components designed to deliver comprehensive cybersecurity operations:
 
@@ -124,6 +124,8 @@ To serve those things, the SOCIMP project is built on a PC powered by:
 - **Storage**: 2 TB SSD
 
 This infrastructure hosts multiple VMs and containers, ensuring scalability and performance across all SOC components.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Adversary Emulation
 
