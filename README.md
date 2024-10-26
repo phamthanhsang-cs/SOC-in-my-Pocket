@@ -54,7 +54,7 @@
       </ul>
     </li>
     <li><a href="#incident-response">Incident Response</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#let'sgo">Let's go</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
