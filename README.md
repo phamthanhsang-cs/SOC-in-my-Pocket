@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket">
-    <img src="images/blueteam.png" alt="Logo" width="150" height="150">
+    <img src="images/logos/blueteam.png" alt="Logo" width="150" height="150">
   </a>
 
 <h3 align="center">Security / SOC Analyst</h3>
