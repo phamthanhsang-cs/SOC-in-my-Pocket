@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src=https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/shuffle-logo.png alt="logo" width="120" height="120">
+<img src=https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/logos/shuffle-logo.png alt="logo" width="120" height="120">
 
 Shuffle Installation Notes
 
