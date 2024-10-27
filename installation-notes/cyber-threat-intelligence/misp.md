@@ -29,7 +29,7 @@ sudo ./INSTALL.ubuntu2404.sh
 
 ### Post installation 
 1. After installation, go to https://<server_ip> 
-2. Default admin credentials are: admin@admin.test / {PASSWORD} (Generate during installation, so you havev to note it)
+2. Default admin credentials are: admin@admin.test / {PASSWORD} (Generate during installation, so don't forget to note it!)
    
 ![Admin account setup](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/misp/misp-login.png)
 
