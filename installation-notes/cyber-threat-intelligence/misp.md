@@ -10,7 +10,7 @@ MISP can deploy easily by using provided installer on Ubuntu 24.04, im deploying
 ### Setup
 Just get MISP installer file and run it, kinda simple, right ? 
 
-1. Download MISP installer file
+1. Download MISP installer file:
 ```bash
 sudo wget https://raw.githubusercontent.com/MISP/MISP/refs/heads/2.5/INSTALL/INSTALL.ubuntu2404.sh
 ```
@@ -25,7 +25,7 @@ sudo chmod a+x INSTALL.ubuntu2404.sh
 sudo ./INSTALL.ubuntu2404.sh      
 ```
 
-
+*You can check details of [the script](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/script-and-excutable/misp-install.sh) here, or go to MISP's official website*
 
 ### Post installation 
 1. After installation, go to https://<server_ip> 
