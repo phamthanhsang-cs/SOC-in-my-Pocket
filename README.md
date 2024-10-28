@@ -163,10 +163,16 @@ See more details on **[NIST Framework Incident Response](https://github.com/pham
 
 
 
-## Let's go
+## Let's Go
+
+*In the SOCIMP project, I will guide you through all stages, starting with **installation notes**, followed by the **integration phase** to connect all components, **preparation for adversary emulation**, and **threat hunting, analysis, response to security incidents** (blue teaming). This project will also cover future development plans.*
+
+* [Installation Notes](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/installation-notes)
+* [Integration]
+* [Adversary Emulation]
+* [Blue Teaming]
 
 
-See the [open issues](https://github.com/phamthanhsang-cs/S0C-in-my-Pocket/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
