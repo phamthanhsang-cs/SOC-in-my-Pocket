@@ -15,7 +15,7 @@ More information about OpenCTI installation:
 ### Prerequisites
 1. **Docker**, you can find install instructions [here](https://docs.docker.com/engine/install/debian/) for Debian
 2. **Docker Swarm**, to get more details how to create and join a swarm, go to [Docker's documentation](https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/) for Swarm Mode
-3. **Docker Portainer**, a very lightweight node and easy to install/manage, you can find it out [here](https://docs.portainer.io/start/install-ce/server/docker/linux)
+3. (Optional) **Docker Portainer**, a very lightweight node, easy to install and has user-friendly GUI, you can find it out [here](https://docs.portainer.io/start/install-ce/server/docker/linux)
 
 
 ### Troubleshooting
@@ -40,6 +40,6 @@ While deploying the OpenCTI Stack, I encountered an issue with the 'health check
 
 ### Useful info / Important note
 * Check out [opencti's documentation](https://docs.opencti.io/latest/) for more information
-* Since MinIO using port 9000 for communication, you have to port-forwarding the Portainer default port to others, mine is 19000:9000
+* Since MinIO using port 9000 for communication, you have to port-forwarding the Portainer default port to others, mine is 19000
 
 
