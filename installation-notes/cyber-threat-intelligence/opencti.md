@@ -19,7 +19,8 @@ More information about OpenCTI installation:
 
 
 ### Troubleshooting
-At the time i was deploying OpenCTI Stack, i encounterd a issue due to 'healthy check' and could'nt start the stack, seems like its new version of OpenCTI's docker-compose.yml.
+While deploying the OpenCTI Stack, I encountered an issue with the 'health check' feature that prevented the stack from starting. Seems like this issue appear due to a change in the docker-compose.yml file in the latest version of [OpenCTI](https://github.com/OpenCTI-Platform/docker) (6.3.5) Docker.
+
 
 1. Example of provided docker-compose.yml file
 ```bash
