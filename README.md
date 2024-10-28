@@ -30,7 +30,7 @@
     ·
     <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/issues/new?labels=bug&template=bug-report---.md">Your Suggestion / Review</a>
     ·
-    <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/issues/new?labels=enhancement&template=feature-request---.md">Other Projects</a>
+    <a href="https://github.com/phamthanhsang-cs/phamthanhsang-cs">Other Projects</a>
   </p>
 </div>
 
