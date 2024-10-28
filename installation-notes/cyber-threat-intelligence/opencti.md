@@ -6,9 +6,9 @@ OpenCTI Installation Notes
 
 </h1>
 
-OpenCTI is a resource-intensive platform due to the many components required for its operation, including Elasticsearch, Redis, MinIO, RabbitMQ, OpenCTI-core, and others. The more connectors you use to feed threat data into OpenCTI, the more resource-demanding the platform becomes.
+OpenCTI is a resource-intensive platform due to the many components required for its operation, including Elasticsearch, Redis, MinIO, RabbitMQ, OpenCTI-core, and others. The more **connectors** you use to feed threat data into OpenCTI, the more resource-demanding the platform becomes.
 
-To address these requirements, I’ve set up OpenCTI on a **two-node Debian cluster** using Docker, with Docker Swarm for orchestration. The nodes are managed through **Portainer**, which simplifies monitoring and scaling. If I encounter storage limitations or exceed the hardware resources like RAM or CPU, or if I need additional redundancy, I can easily add more nodes to the cluster and join them to the Docker Swarm.
+To address these requirements, I’ve set up OpenCTI on a **two-node Debian cluster** using Docker, with **Docker Swarm** for orchestration. The nodes are managed through **Portainer**, which simplifies monitoring and scaling. If I encounter storage limitations or exceed the hardware resources like RAM or CPU, or if I need additional redundancy, I can easily add more nodes to the cluster and join them to the Docker Swarm.
 
 More information about OpenCTI installation: 
 
@@ -41,4 +41,5 @@ While deploying the OpenCTI Stack, I encountered an issue with the 'health check
 ### Useful info / Important note
 * Check out [opencti's documentation](https://docs.opencti.io/latest/) for more information
 * Since MinIO using port 9000 for communication, you have to port-forwarding the Portainer default port to others, mine is 19000:9000
+
 
