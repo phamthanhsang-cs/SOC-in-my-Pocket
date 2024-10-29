@@ -5,7 +5,7 @@ Shuffle Installation Notes
 
 </h1>
 
-I think Shuffle Insllation is pretty easy to understand and straighforward, so many installation method are there such as via docker, kubenetes,...
+I think Shuffle Installation is pretty easy to understand and straighforward, so many installation methods are there such as via docker, kubenetes,...
 
 ### Default Setup
 Since i want to simplify the installation process, i go with default installation, not scalable build but easy to follow and enough for my project
