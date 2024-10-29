@@ -114,8 +114,8 @@ services:
       - OPENCTI_TOKEN=${OPENCTI_ADMIN_TOKEN}
       - WORKER_LOG_LEVEL=info
     depends_on:
-      opencti:
-        condition: service_healthy
+      - opencti
+
     deploy:
       mode: replicated
       replicas: 3
