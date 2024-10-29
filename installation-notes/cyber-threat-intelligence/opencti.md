@@ -126,6 +126,7 @@ Error Preferences:
 
 ### Useful info / Important note
 * Check out [opencti's documentation](https://docs.opencti.io/latest/) for more information
+* For UUIDv4, you can use Generator Tool, im using this [website](https://www.uuidgenerator.net/version4) 
 * Since MinIO using port 9000 for communication, you have to port-forwarding the Portainer default GUI port to others, mine is 19000 for HTTP and 19443 for HTTPS
 * Update 10/29/2024: I switched from Docker Swarm to Standalone Docker node for Kubenetes Infrastructure in the future
 
