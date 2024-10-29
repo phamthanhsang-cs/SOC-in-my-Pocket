@@ -25,7 +25,7 @@ sudo chmod a+x INSTALL.ubuntu2404.sh
 sudo ./INSTALL.ubuntu2404.sh      
 ```
 
-*You can check details of [the script](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/.build/misp-install.sh) here, or go to MISP's official website*
+*You can check details of [the script](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/.build/misp/misp-install.sh) here, or go to MISP's official website*
 
 ### Post installation 
 1. After installation, go to https://<server_ip> 
