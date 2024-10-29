@@ -8,18 +8,21 @@ OpenCTI Installation Notes
 
 OpenCTI is a resource-intensive platform due to the many components required for its operation, including Elasticsearch, Redis, MinIO, RabbitMQ, OpenCTI-core, and others. The more **connectors** you use to feed threat data into OpenCTI, the more resource-demanding the platform becomes.
 
-To address these requirements, I’ve set up OpenCTI on a **two-node Debian cluster** using Docker, with **Docker Swarm** for orchestration. The nodes are managed through **Portainer**, which simplifies monitoring and scaling. If I encounter storage limitations or exceed the hardware resources like RAM or CPU, or if I need additional redundancy, I can easily add more nodes to the cluster and join them to the Docker Swarm.
+### Installation
 
-More information about OpenCTI installation: 
+*OpenCTI offers multiple deployment options, including Docker, manual installation, and even using Terraform or Kubernetes Helm Charts.*
+
+For my setup, I chose **Docker** for deploying the OpenCTI stack. This method provides a quick and efficient deployment process, making it easy to add or manage connectors, especially with the help of **Portainer**.
+
 
 ### Prerequisites
 1. **Docker**, you can find install instructions [here](https://docs.docker.com/engine/install/debian/) for Debian
-2. **Docker Swarm**, to get more details how to create and join a swarm, go to [Docker's documentation](https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/) for Swarm Mode
-3. (Optional) **Docker Portainer**, a very lightweight node, easy to install and has user-friendly GUI, you can find it out [here](https://docs.portainer.io/start/install-ce/server/docker/linux)
-
+2. (Optional) **Docker Portainer**, a very lightweight node, easy to install and has user-friendly GUI, you can find it out [here](https://docs.portainer.io/start/install-ce/server/docker/linux)
 
 ### Troubleshooting
-While deploying the OpenCTI Stack, I encountered an issue with the 'health check' feature that prevented the stack from starting. Seems like this issue appear due to a change in the docker-compose.yml file in the latest version of [OpenCTI](https://github.com/OpenCTI-Platform/docker) (6.3.5) Docker.
+This is the time when eveything become interesting when i encountered some kinda tricky buggies. 
+
+While deploying the OpenCTI Stack, I encountered an issue with the 'health check' feature that prevented the stack from starting. Seems like this issue appear due to version of docker swarm make it unable to use depent on
 
 Error Preference:
 1. https://github.com/OpenCTI-Platform/docker/issues/322
