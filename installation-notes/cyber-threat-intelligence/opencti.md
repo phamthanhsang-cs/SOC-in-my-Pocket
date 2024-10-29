@@ -22,9 +22,9 @@ For my setup, I chose **Docker** for deploying the OpenCTI stack. This method pr
 ### Troubleshooting
 This is the time when eveything become interesting when i encountered some kinda tricky buggies. 
 
-While deploying the OpenCTI Stack, I encountered an issue with the 'health check' feature that prevented the stack from starting. Seems like this issue appear due to version of docker swarm make it unable to use depent on
+First time when i was deploying the OpenCTI Stack, I encountered an issue with the 'health check' feature that prevented the stack from starting.
 
-Error Preference:
+Error Preferences:
 1. https://github.com/OpenCTI-Platform/docker/issues/322
 2. https://stackoverflow.com/questions/57406409/unsupported-compose-file-version-1-0-even-when-i-have-the-right-compatability
 3. https://github.com/OpenCTI-Platform/docker/pull/310
@@ -111,9 +111,6 @@ Error Preference:
       - minio
       - rabbitmq
 ```
-
-
-Now, everything is up and running well !
    
 ![OpenCTI Components Setup](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/opencti/opencti-images.png)
 
