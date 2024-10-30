@@ -31,3 +31,6 @@ wget -q -O /tmp/install.sh https://archives.strangebee.com/scripts/install.sh ; 
 ### Useful info / Important note
 * Check out **[TheHive's documentation](https://docs.strangebee.com/thehive/overview/)** for more information about it
 * Since all the Infrastructure are running on Proxmox, so i had test TheHive on Proxmox LXC Containter and run it successfully
+* Note that default install is platinum trial (14 days) so you need to *[change the license](https://docs.strangebee.com/thehive/installation/activate-license/)* to community edition afterward
+  
+![Expired License](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/thehive/expired-license.png)
