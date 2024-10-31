@@ -13,17 +13,18 @@ To keep things organized, each component is categorized into its own subfolder:
 ```text
 ├── installation-notes
 │   ├── cyber-threat-intelligence
-│   │   ├── misp.md
-│   │   ├── opencti.md
+│   │     ├── misp.md
+│   │     ├── opencti.md
 │   ├── firewall
-│   │   ├── opnsense.md
+│   │     ├── opnsense.md
 │   ├── siem
-│   │   ├── elastic-stack.md
+│   │     ├── elastic-stack.md
 │   ├── soar
-│   │   ├── cortex.md
-│   │   ├── shuffle.md
-│   │   ├── thehive.md
-└── README.md
+│   │     ├── cortex.md
+│   │     ├── shuffle.md
+│   │     ├── thehive.md
+│   ├── README.md
+
 ```
 ## Important Note !
 * My documentation does not provide a detailed, step-by-step installation guide. Instead, it highlights my experiences, troubleshooting tips, and solutions to potential issues you may encounter during setup.
