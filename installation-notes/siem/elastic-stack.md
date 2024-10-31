@@ -61,7 +61,7 @@ You should receive a response similar to this:
 
 4. Adding Elastic certificate into Fleet server
    
-   You can move the elasticsearch certificate into Fleet via SCP, FTP or using ``python3 -m http.server`` on the server running Elasticsearch and then get the search on the Fleet server by using `curl <Server_running_Elasticsearch_IP_address>:8000/http_ca.crt -o /path/to/.crt`
+   You can move the elasticsearch certificate into Fleet via SCP, FTP or using ``python3 -m http.server`` on the server running Elasticsearch and then get the certificate on the Fleet server by using `curl <Server_running_Elasticsearch_IP_address>:8000/http_ca.crt -o /path/to/.crt`
 
    And add the `.crt` to Fleet Server Installation Guide
 ```bash
