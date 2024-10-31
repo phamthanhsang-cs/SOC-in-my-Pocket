@@ -10,6 +10,21 @@ To keep things organized, each component is categorized into its own subfolder:
 - SIEM: Elastic Stack (Elasticsearch, Kibana and Fleet)
 - SOAR: Shuffle, TheHive and Cortex
 
+```text
+├── installation-notes
+│   ├── cyber-threat-intelligence
+│   │   ├── misp.md
+│   │   ├── opencti.md
+│   ├── firewall
+│   │   ├── opnsense.md
+│   ├── siem
+│   │   ├── elastic-stack.md
+│   ├── soar
+│   │   ├── cortex.md
+│   │   ├── shuffle.md
+│   │   ├── thehive.md
+└── README.md
+```
 ## Important Note !
 * My documentation does not provide a detailed, step-by-step installation guide. Instead, it highlights my experiences, troubleshooting tips, and solutions to potential issues you may encounter during setup.
 * The focus here is on getting each platform up and accessible. For guidance on integrating all components together, please refer to the [Integration] section.
