@@ -5,10 +5,10 @@ This folder contains the essential notes on how each component in the project wa
 ## Folder Structure:
 To keep things organized, each component is categorized into its own subfolder:
 
-- Cyber Threat Intelligence (CTI) or Threat Intelligence Platform (TIP): MISP and OpenCTI
-- Firewall: OPNSense
-- SIEM: Elastic Stack (Elasticsearch, Kibana and Fleet)
-- SOAR: Shuffle, TheHive and Cortex
+- **Cyber Threat Intelligence (CTI) or Threat Intelligence Platform (TIP)**: MISP and OpenCTI
+- **Firewall**: OPNSense
+- **SIEM**: Elastic Stack (Elasticsearch, Kibana and Fleet) and Elastic Defend as **"mini" EDR**
+- **SOAR**: Shuffle, TheHive and Cortex
 
 ```text
 ├── installation-notes
