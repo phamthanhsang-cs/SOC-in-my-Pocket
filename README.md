@@ -165,10 +165,12 @@ See more details on **[NIST Framework Incident Response](https://github.com/pham
 
 ## Let's Go
 
-*In the SOCIMP project, I will guide you through all stages, starting with **installation notes**, followed by the **configuration/integration phase** to connect all components, **preparation for adversary emulation**, and **threat hunting, analysis, response to security incidents** (blue teaming). This project will also cover future development plans.*
+In the **SOCIMP** project, I will guide you through all stages, starting with **installation notes**, followed by the **deployment** where i *config* and *integrate* all components, **preparation for adversary emulation**, and **threat hunting, analysis, response to security incidents** (blue teaming). 
+
+*This project will also cover future development plans.*
 
 * [Installation Notes](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/installation-notes)
-* [Configuration/Integration]
+* [Deployment](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/deployment)
 * [Adversary Emulation]
 * [Blue Teaming]
 
