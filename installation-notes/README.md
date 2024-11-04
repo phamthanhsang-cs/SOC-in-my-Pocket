@@ -28,5 +28,5 @@ To keep things organized, each component is categorized into its own subfolder:
 ```
 ## Important Note !
 * My documentation does not provide a detailed, step-by-step installation guide. Instead, it highlights my experiences, troubleshooting tips, and solutions to potential issues you may encounter during setup.
-* The focus here is on getting each platform up and accessible. For guidance on integrating all components together, please refer to the [Integration] section.
+* The focus here is on getting each platform up and accessible. For guidance on configuring and integrating all components together, please refer to the [Deployment](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/deployment) section.
 
