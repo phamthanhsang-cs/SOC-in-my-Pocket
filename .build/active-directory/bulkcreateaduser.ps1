@@ -1,4 +1,7 @@
 #Shoutout to Robert Allen that created this useful Powershell Script, you could visit his websites: activedirectrypro.com
+#Also thanks to everyone who gave support cmt to re-config the script
+#Adding -Encoding UTF8 to the Import-CSV - No funky char for non-english
+#Adding $SAMAccountName = try { $Username.substring(0, 20) } catch [ArgumentOutOfRangeException] { $Username } - Add Flexibility for long username but prevent errors by trunking it for the SAMAccountName.
 #Import active directory module for running AD cmdlets
 
 Import-Module activedirectory
