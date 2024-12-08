@@ -118,10 +118,10 @@ Since SOCIMP includes essential SOC components designed to deliver comprehensive
 - **Firewall**: I opted for **OPNSense**, which offers a user-friendly dashboard, advanced traffic inspection, and a variety of built-in security features to protect the network.
 
 
-To serve those things, the SOCIMP project is built on a PC powered by:
+To serve those things, the SOCIMP project is built on a Workstation powered by:
 - **CPU**: Intel Xeon (18 cores / 36 threads)
 - **RAM**: 96 GB
-- **Storage**: 2 TB SSD
+- **Storage**: 1 TB SSD
 
 This infrastructure hosts multiple VMs and containers, ensuring scalability and performance across all SOC components.
 
