@@ -1,13 +1,9 @@
 # Firewall Rules 
 
 ## Overview
-This document outlines the firewall rules implemented for the **SOCIMP** project to secure network traffic between VLANs, endpoints, and critical infrastructure. Each section specifies the rules applied to different VLANs and services based on their purpose and security requirements.
+This document details the firewall rules implemented for the SOCIMP project to secure and manage network traffic between VLANs, endpoints, and critical infrastructure. Each section outlines the specific rules applied to different VLANs and services based on their purpose and security requirements.
 
-Since i only apply penetration test on two networks: **Servers Area** & **User Workstation**
-
-
-
-
+For this project, penetration testing is limited to two key networks: Servers Area (VLAN 5) and User Workstations (VLAN 192). Therefore, the OPNSense firewall rules are focused on securing and monitoring traffic within these networks.
 
 ## Table of Contents
 1. [General Principles](#general-principles)
