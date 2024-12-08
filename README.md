@@ -18,7 +18,7 @@
     <img src="images/logos/blueteam.png" alt="Logo" width="150" height="150">
   </a>
 
-<h3 align="center">Security / SOC Analyst</h3>
+<h3 align="center">SOC Analyst</h3>
 
   <p align="center">
    To be a part of y'all
