@@ -10,7 +10,7 @@ For this project, penetration testing is limited to two key networks: Servers Ar
 2. [Rules by VLAN](#rules-by-vlan)
    - [VLAN 5: local_server_area (Servers Area)](#vlan-5-local_server_area---servers-area)
    - [VLAN 192: user_network (User Workstations)](#vlan-192-user_network---user-workstations)
-3. [Penetration Testing Considerations](#penetration-testing-considerations)
+3. [Penetration Testing Considerations](#socimp-penetration-testing-considerations)
 4. [Known Exceptions](#known-exceptions)
 
 
@@ -107,6 +107,12 @@ For this project, penetration testing is limited to two key networks: Servers Ar
   - Source: any
   - Destination: any
   - Port: any
+
+<div align="center"> 
+  <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/opnsense/localserverarearule.jpg" alt="localserverrule" />
+</div>
+
+
 
 ### VLAN 192: user_network - User Workstations
 - **Purpose:** Simulates real-world user environments.
@@ -215,20 +221,23 @@ For this project, penetration testing is limited to two key networks: Servers Ar
  **Allow Internet Traffic**
   - Action: Pass
   - Direction: In
-  - TCP/IP Version: IPv4
+  - TCP/IP 9Version: IPv4
   - Protocol: any
   - Source: any
   - Destination: any
   - Port: any
 
-## Penetration Testing Considerations
+
+<div align="center"> 
+  <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/opnsense/usernetworkrule.jpg" alt="usernetworkrule" />
+</div>
+
+## SOCIMP Penetration Testing Considerations
 - **VLAN 5 and VLAN 192:** Ports such as 110, 25, and 135 are intentionally opened for testing.
 - **Testing Scope:**
 - Simulate phishing attacks against the mail server.
 - Test user vulnerabilities through exposed ports in VLAN 192.
 - Use **AtomicRedTeam** to test network-related attacks
-
-
 
 
 ## Known Exceptions
@@ -244,6 +253,6 @@ For this project, penetration testing is limited to two key networks: Servers Ar
 | Date       | Change Description                                   
 |------------|-----------------------------------------------------|
 | 2024-12-08 | Initial documentation for firewall rules.           | 
-| YYYY-MM-DD |   | 
+| 2024-12-09 | Change Reject to Block for addtional security layer | 
 
 
