@@ -217,16 +217,14 @@ For this project, penetration testing is limited to two key networks: Servers Ar
   - Destination: private_network (alias: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16)
   - Port: any
   - Logging: Enable
- 
- **Allow Internet Traffic**
+
+  **Allow Internet Traffic**
   - Action: Pass
   - Direction: In
-  - TCP/IP 9Version: IPv4
+  - TCP/IP Version: IPv4
   - Protocol: any
   - Source: any
   - Destination: any
-  - Port: any
-
 
 <div align="center"> 
   <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/opnsense/usernetworkrule.jpg" alt="usernetworkrule" />
