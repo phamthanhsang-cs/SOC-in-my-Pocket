@@ -194,7 +194,7 @@ In the **SOCIMP** project, I will guide you through all stages, starting with **
 <!-- CONTACT -->
 ## Contact
 
-Pham Thanh Sang - [@telegram](https://t.me/sangpham0311) - sang3112002@gmail.com
+[Pham Thanh Sang](https://www.linkedin.com/in/phamthanhsang0311/) - [@telegram](https://t.me/sangpham0311) - sang3112002@gmail.com
 
 Project Link: [https://github.com/phamthanhsang-cs/SOC-in-my-Pocket](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket)
 
