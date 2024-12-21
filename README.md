@@ -23,8 +23,6 @@
   <p align="center">
    To be a part of y'all
     <br />
-    <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket">My Demo</a>
     ·
@@ -107,7 +105,7 @@ With its advanced monitoring, automation, and response capabilities, this SOC se
 
 Since SOCIMP includes essential SOC components designed to deliver comprehensive cybersecurity operations:
 
-- **SIEM**: The Elastic Stack is my SIEM solution of choice. All logs and data sources (Workstations: Windows/Linux, Servers, Firewalls, Cloud, Web Applications, etc.) are forwarded into the Elastic Stack and centrally managed through a Fleet Server.
+- **SIEM**: The Elastic Stack is my SIEM solution of choice. All logs and data sources (Workstations, Servers, Firewalls, Web Applications, etc.) are forwarded into the Elastic Stack and centrally managed through a Fleet Server.
   
 - **EDR**: Elastic Agent, integrated with Elastic Defend, provides robust endpoint detection and response (EDR) capabilities that work seamlessly within the Elastic ecosystem.
 
@@ -117,8 +115,10 @@ Since SOCIMP includes essential SOC components designed to deliver comprehensive
 
 - **Firewall**: I opted for **OPNSense**, which offers a user-friendly dashboard, advanced traffic inspection, and a variety of built-in security features to protect the network.
 
+*You might be wondering: **Where is the Vulnerability Management like Tenable, Qualys, or OpenVAS?** While these tools are important, my current focus is on gaining in-depth experience with incident analysis and hands-on practice using the tools mentioned above.*
 
-To serve those things, the SOCIMP project is built on a Workstation powered by:
+
+**To serve those things, the SOCIMP project is built on a Workstation powered by:**
 - **CPU**: Intel Xeon (18 cores / 36 threads)
 - **RAM**: 96 GB
 - **Storage**: 1 TB SSD
@@ -130,6 +130,7 @@ This infrastructure hosts multiple VMs and containers, ensuring scalability and 
 ## Adversary Emulation
 
 For **adversary emulation**, I chose to use **[Atomic Red Team](https://atomicredteam.io/)**. It’s lightweight, portable, and allows me to quickly test my environment.
+And i also used Parrot-OS
 
 *In the future, I may also explore **[Caldera](https://caldera.mitre.org/)** for more advanced adversary simulation capabilities.*
 
@@ -143,7 +144,7 @@ For **adversary emulation**, I chose to use **[Atomic Red Team](https://atomicre
 
 ## Incident Response
 
-For incident response, I rely on the well-structured **NIST Framework** to handle security incidents effectively. This framework provides a standardized approach, ensuring a thorough and consistent response to potential security threats. The NIST Incident Response Lifecycle includes four main stages:
+For incident response, I rely on the well-structured **NIST Framework** to handle security incidents effectively. This framework provides a standardized approach, ensuring a thorough and consistent response to potential security threats. Four main stages of the NIST Incident Response Lifecycle:
 
 1. **Preparation** – Establishing and maintaining an incident response capability. This involves creating an incident response policy, identifying resources, and training the response team.
 
@@ -153,9 +154,7 @@ For incident response, I rely on the well-structured **NIST Framework** to handl
 
 4. **Post-Incident Activity** – Learning from the incident to improve future responses. This involves documenting the incident, conducting a post-mortem analysis, and updating policies and procedures.
 
-See more details on **[NIST Framework Incident Response](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/external-documents/NIST-Framework-for-IR.pdf)**. Following this structured approach allows me to respond to incidents efficiently and continuously improve my SOCIMP project’s security posture.
-
-*NOTE: You could follow SANS Framework instead or maybe both dependancy*
+See more details on **[NIST Framework Incident Response](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/external-documents/NIST-Framework-for-IR.pdf)**. 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -171,8 +170,8 @@ In the **SOCIMP** project, I will guide you through all stages, starting with **
 
 * [Installation Notes](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/installation-notes): My setup processes, challenges encountered, and troubleshooting techniques for various components.
 * [Deployment](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/deployment): Procedures for deploying and integrating tools to create a functional SOC infrastructure.
-* [Adversary Emulation]: How i setting up adversary environments, building attack plans, and replicating real-world behaviors using the MITRE ATT&CK Framework.
-* [**Blue Teaming**]: Processes for monitoring alerts, detecting threats, and responding to incidents. This is the location that you might need to see since its the main part of my project and also **WHY I'M HERE** ! 
+* [Adversary Emulation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/adversaries-emulation): How i setting up adversary environments, building attack plans, and replicating real-world behaviors using the MITRE ATT&CK Framework.
+* [**Blue Teaming**](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/blue-teaming): Processes for monitoring alerts, detecting threats, and responding to incidents. This is the location that you might need to see since its the main part of my project and also **WHY I'M HERE** ! 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
