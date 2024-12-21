@@ -173,7 +173,7 @@ In the **SOCIMP** project, I will guide you through all stages, starting with **
 * [Installation Notes](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/installation-notes): My setup processes, challenges encountered, and troubleshooting techniques for various components.
 * [Deployment](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/deployment): Procedures for deploying and integrating tools to create a functional SOC infrastructure.
 * [Adversary Emulation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/adversaries-emulation): How i setting up adversary environments, building attack plans, and replicating real-world behaviors using the MITRE ATT&CK Framework.
-* [**Blue Teaming**](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/blue-teaming): Processes for monitoring alerts, detecting threats, and responding to incidents. This is the location that you might need to see since its the main part of my project and also **WHY I'M HERE** ! 
+* [Blue Teaming](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/blue-teaming): Processes for monitoring alerts, detecting threats, and responding to incidents. This is the location that you might need to see since its the main part of my project and also **WHY I'M HERE** ! 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
