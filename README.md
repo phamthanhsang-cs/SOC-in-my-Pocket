@@ -75,16 +75,18 @@
 
 
 
-### Built With
+### Implement With
 
-* [![OPNSense][OPNSense]][OPNSense-url]
-* [![Elastic][Elastic]][Elastic-url]
-* [![Shuffle][Shuffle]][Shuffle-url]
-* [![Cortex][Cortex]][Cortex-url]
-* [![TheHive][TheHive]][TheHive-url]
-* [![MISP][MISP]][MISP-url]
-* [![OpenCTI][OpenCTI]][OpenCTI-url]
-* [![AtomicRedTeam][AtomicRedTeam]][AtomicRedTeam-url]
+[![OPNSense][OPNSense]][OPNSense-url]
+[![Elastic][Elastic]][Elastic-url]
+[![Shuffle][Shuffle]][Shuffle-url]
+[![Cortex][Cortex]][Cortex-url]
+[![TheHive][TheHive]][TheHive-url]
+[![MISP][MISP]][MISP-url]
+[![OpenCTI][OpenCTI]][OpenCTI-url]
+[![AtomicRedTeam][AtomicRedTeam]][AtomicRedTeam-url]
+[![ParrotSec][ParrotSec]][ParrotSec-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -232,3 +234,5 @@ Project Link: [https://github.com/phamthanhsang-cs/SOC-in-my-Pocket](https://git
 [OpenCTI-url]: https://filigran.io/solutions/open-cti/
 [AtomicRedTeam]: https://img.shields.io/badge/AtomicRedTeam-%23FF0000.svg?style=for-the-badge&logo=wagtail&logoColor=white
 [AtomicRedTeam-url]: https://atomicredteam.io/
+[ParrotSec]: https://img.shields.io/badge/ParrotSec-%23003399.svg?style=for-the-badge&logo=parrotsecurity&logoColor=black"
+[ParrotSec-url]: https://www.parrotsec.org/
