@@ -64,11 +64,11 @@
 ## About The Project
 
 <div align="center"> 
-  <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/proposals/birdseyeview.png" alt="screenshot" />
+  <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/proposals/birdseyeview.jpg" alt="screenshot" />
 </div>
 
 <div align="center"> 
-  Bird's Eye View of my SOC Infrastructure (Oct/2024)
+  Bird's Eye View of my SOC Infrastructure (Dec/2024)
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
