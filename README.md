@@ -197,8 +197,8 @@ In the **SOCIMP** project, I will guide you through all stages, starting with **
 [Pham Thanh Sang](https://www.linkedin.com/in/phamthanhsang0311/) - [@telegram](https://t.me/sangpham0311) - sang3112002@gmail.com
 
 Projects: 
-- [SOCIMP](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket)
-- [BOTS](https://github.com/phamthanhsang-cs/Boss-of-the-SOC)
+- [SOC in my Pocket - SOCIMP](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket)
+- [Boss of the SOC - BOTS](https://github.com/phamthanhsang-cs/Boss-of-the-SOC)
   
 My Website: https://phamthanhsang-cs.github.io/
 
