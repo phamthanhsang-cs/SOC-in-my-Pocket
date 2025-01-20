@@ -199,7 +199,7 @@ In the **SOCIMP** project, I will guide you through all stages, starting with **
   - [SOC in my Pocket - SOCIMP](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket)
   - [Boss of the SOC - BOTS](https://github.com/phamthanhsang-cs/Boss-of-the-SOC)
   
-**My Blog site:** https://phamthanhsang-cs.github.io/
+**My Blog site:** https://phamthanhsang-cs.site/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
