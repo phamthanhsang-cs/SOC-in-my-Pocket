@@ -126,4 +126,7 @@ You can check it directly from ADDS tool, below is example of my SOCIMP's IT Use
 ![AD User Check Example](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-Users-Check.png)
 
 ## Test
+![Domain User Login Test](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Test-AD-User.png)
+
+![Domain User Information](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Test-AD-User-Infor.png)
 
