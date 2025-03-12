@@ -1,18 +1,18 @@
-# Active Directory Domain Service for SOCIMP
+# Active Directory Domain Services (ADDS) for SOCIMP
 
 ## Overview
 
-This document outlines the Active Directory Domain Services (ADDS) implementation for the SOCIMP project includes organization structure. 
+This document outlines the implementation of Active Directory Domain Services (ADDS) for the SOCIMP project, including the organizational structure.
 
-Its not step-by-step implementation, guide you how to install a Windows Server and promote it do Domain Controller, install ADDS, stuffs like that since you could found it from anywhere, methods are the same.
+This is not a step-by-step guide on installing Windows Server, promoting it to a Domain Controller, or setting up ADDS, as such information is widely available. Instead, this document focuses on the design and implementation specifics tailored for SOCIMP.
 
 ## Design Principles
 
 The ADDS implementation follows these key principles:
 
-- **Security:** Properly structured OUs, minimal privilege principle, and GPO hardening.
+- **Security:** Properly structured Organizational Units (OUs), the principle of least privilege, and Group Policy Object (GPO) hardening.
 - **Scalability:** Designed to support future expansion.
-- **Manageability:** Clear distinction between user and computer accounts.
+- **Manageability:** Clear distinction between user and computer accounts for streamlined management.
 
 ## Organizational Hierarchy
 
@@ -20,7 +20,7 @@ The ADDS implementation follows these key principles:
 
 ### **Top-Level OUs:**
 
-- **SOCIMP Computers - For SOCIMP User Workstation (e.g: HR Computer, IT Computer,...)**
+- **SOCIMP Workstations** – Organizational units for SOCIMP user workstations (e.g., HR, IT, Accounting computers)
   - Accounting
   - HR
   - IT
@@ -30,7 +30,8 @@ The ADDS implementation follows these key principles:
   - Operations
   - PR
   - Purchasing
-- **SOCIMP Users - SOCIMP Users (e.g: Jonny Snowman from Accounting Department,...)**
+
+- **SOCIMP Users** – Contains SOCIMP user accounts organized by department (e.g., Timmy Snowman from Accounting)
   - Accounting
   - HR
   - IT
@@ -40,93 +41,105 @@ The ADDS implementation follows these key principles:
   - Operations
   - PR
   - Purchasing
-- **SOCIMP Groups**
-  - Accounting_Folders
-  - Accounting_Local
-  - Accounting_Printers
-  - HR_Folders
-  - HR_local
-  - IT_Folders
-  - IT_Local
-  - IT_Printers
-  - Legal_Folders
-  - Legal_Printers
-  - Management_Folders
-  - Management_Printers
-  - Marketing_Folders
-  - Marketing_local
-  - Operations_Folders
-  - Operations_Printers
-  - PR_Folders
-  - PR_Printers
-  - Purchasing_Folders
-  - Purchasing_Printers
-- **SOCIMP Servers Computer - For SOCIMP Servers (e.g: SOCIMP Internal Root-CA Server,..)**
-- **SOCIMP Services User- For specific Service Users (DB Account, CA Admin Account,...)**
+
+- **SOCIMP Groups** – Security and distribution groups for access control and resource management
+  - Accounting_Folders, Accounting_Local, Accounting_Printers
+  - HR_Folders, HR_Local
+  - IT_Folders, IT_Local, IT_Printers
+  - Legal_Folders, Legal_Printers
+  - Management_Folders, Management_Printers
+  - Marketing_Folders, Marketing_Local
+  - Operations_Folders, Operations_Printers
+  - PR_Folders, PR_Printers
+  - Purchasing_Folders, Purchasing_Printers
+
+- **SOCIMP Servers** – Contains SOCIMP server accounts (e.g., SOCIMP Internal Root-CA Server)
+- **SOCIMP Service Accounts** – Dedicated accounts for specific services (e.g., Database Admin, Certificate Authority Admin)
 
 ## Implementation Details
 
-- **User Accounts:** Organized by department for easier permission management.
-- **Computer Accounts:** Segmented per department to enforce department-specific policies.
+- **User Accounts:** Organized by department for easier permission and access control management.
+- **Computer Accounts:** Segmented by department to enforce department-specific policies.
 - **Group Policies:** Applied at the OU level to ensure security configurations are enforced.
-- **Service Accounts:** Separated into `SOCIMP Services User` for better access control.
-- **Server Management:** Dedicated `SOCIMP Servers Computer` OU to apply stricter security measures.
+- **Service Accounts:** Managed separately under `SOCIMP Service Accounts` to enhance security and control.
+- **Server Management:** Dedicated `SOCIMP Servers` OU for applying stricter security measures.
 
-## Bulk OUs / Groups / Users creatation using AD Pro Toolkit
+## Bulk Creation of OUs, Groups, and Users Using AD Pro Toolkit
 
-The problem goes here ! How can i deploy these stuffs effeciently. Not gonna lie, it could be a tedious job ! Powershell script is a way to deal with that problem and had to apply in various real enviroment. 
+Deploying the entire AD structure manually can be tedious and time-consuming. While PowerShell scripts are commonly used for bulk creation in real-world environments, this document introduces an alternative tool: **AD Pro Toolkit** (Trial version).
 
-But i wanna introduce to you a tool that i used to create OUs, Groups and a bunch of users - AD Pro Toolkit (Trial version ofc ! xD).
+AD Pro Toolkit is a powerful tool for managing and maintaining Active Directory, offering features such as bulk creation, reporting, and monitoring.
 
-AD Pro Toolkit is a cool tool to manage and maintain active directory. Theres a lot of useful feature like bulk creation, report, monitor,...
+For the SOCIMP project, AD Pro Toolkit was used to automate the creation of OUs, Groups, and Users.
 
-For SOCIMP use the tool for create all these stuffs for me.
+### Preparing Data Files
 
-First, i have to create neccessary data which is csv files contains my SOCIMP OUs, Groups and also Users. You could find these csv files [here](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/.build/active-directory)
+To streamline the process, necessary data is prepared in CSV files:
+- **OUs.csv** – Defines the Organizational Units
+- **Groups.csv** – Lists the security and distribution groups
+- **socimpusers.csv** – Contains user account details
 
+These files can be accessed [here](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/.build/active-directory).
 
-### OUs creation
+### Organizational Units (OUs) Creation
 
-1. Open AD Pro Toolkit, navigate to Other Tools --> Import OUs
-2. Choose Import --> Choose OUs.csv file
-3. Run
-   
+1. Open AD Pro Toolkit and navigate to **Other Tools → Import OUs**.
+2. Click **Import**, then select `OUs.csv`.
+3. Click **Run**.
+
 ![OUs Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/OUs-creation.png)
 
-To see if our csv file and socimp.local OUs is config import correctly: Report --> OUs Report --> Run
+To verify the import:
+- Go to **Report → OUs Report → Run**.
+
 ![OUs Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/OUs-report.png)
 
-You can check it directly from ADDS tool.
+You can also confirm directly in the Active Directory Users and Computers (ADUC) tool.
+
 ![AD OUs Check](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-OUs-Check.png)
 
-### Groups creation
-1. After OUs imported, navigate to Group Tools --> Bulk create groups
-2. Choose Import --> Choose Groups.csv file
-3. Run
+### Groups Creation
+
+1. After importing OUs, navigate to **Group Tools → Bulk Create Groups**.
+2. Click **Import**, then select `Groups.csv`.
+3. Click **Run**.
 
 ![Groups Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Groups-creation.png)
 
-To see if our csv file and socimp.local Groups is config import correctly: Report --> Groups Report --> All Groups --> Run
+To verify the import:
+- Go to **Report → Groups Report → All Groups → Run**.
+
 ![Groups Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Groups-report.png)
 
-You can check it directly from ADDS tool.
+You can also confirm directly in ADUC.
+
 ![AD Groups Check](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-Groups-Check.png)
 
-### Users creation
-1. Last but not least, navigate to User Tools --> Bulk create users
-2. Choose Import --> Choose socimpusers.csv file
-3. Run
+### Users Creation
+
+1. Navigate to **User Tools → Bulk Create Users**.
+2. Click **Import**, then select `Users.csv`.
+3. Click **Run**.
 
 ![Users Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Users-creation.png)
 
-To see if our csv file and socimp.local Users is config import correctly: Report --> Users Report --> All Users --> Run
+To verify the import:
+- Go to **Report → Users Report → All Users → Run**.
+
 ![Users Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Users-report.png)
 
-You can check it directly from ADDS tool, below is example of my SOCIMP's IT Users.
+You can also confirm directly in ADUC. Below is an example of SOCIMP's IT user accounts.
+
 ![AD User Check Example](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-Users-Check.png)
 
-## Test
+## Testing
+
+To validate the setup, a test user was selected from the SOCIMP organization. The user was able to successfully log in to the domain.
+
 ![Domain User Login Test](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Test-AD-User.png)
 
+The account details were also verified.
+
 ![Domain User Information](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Test-AD-User-Infor.png)
+
 
