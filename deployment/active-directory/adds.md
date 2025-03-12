@@ -74,5 +74,34 @@ The ADDS implementation follows these key principles:
 
 ## Bulk OUs / Groups / Users creatation using AD Pro Toolkit
 
-The problem goes here ! How can i deploy these stuffs effeciently. Not gonna lie, it could be a tedious job 
+The problem goes here ! How can i deploy these stuffs effeciently. Not gonna lie, it could be a tedious job ! Powershell script is a way to deal with that problem and had to apply in various real enviroment. 
 
+But i wanna introduce to you a tool that i used to create OUs, Groups and a bunch of users - AD Pro Toolkit (Trial version ofc ! xD).
+
+AD Pro Toolkit is a cool tool to manage and maintain active directory. Theres a lot of useful feature like bulk creation, report, monitor,...
+
+For SOCIMP use the tool for create all these stuffs for me.
+
+First, i have to create neccessary data which is csv files contains my SOCIMP OUs, Groups and also Users. You could find these csv files [here](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/.build/active-directory)
+
+
+### OUs creation
+![OUs Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/OUs-creation.png)
+
+![OUs Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/OUs-report.png)
+
+![AD OUs Check](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-OUs-Check.png)
+
+### Groups creation
+![Groups Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Groups-creation.png)
+
+![Groups Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Groups-report.png)
+
+![AD Groups Check](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-Groups-Check.png)
+
+### Users creation
+![Users Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Users-creation.png)
+
+![Users Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Users-report.png)
+
+![AD User Check Example](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-Users-Check.png)
