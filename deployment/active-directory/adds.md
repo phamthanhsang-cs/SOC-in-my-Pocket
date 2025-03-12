@@ -86,22 +86,44 @@ First, i have to create neccessary data which is csv files contains my SOCIMP OU
 
 
 ### OUs creation
+
+1. Open AD Pro Toolkit, navigate to Other Tools --> Import OUs
+2. Choose Import --> Choose OUs.csv file
+3. Run
+   
 ![OUs Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/OUs-creation.png)
 
+To see if our csv file and socimp.local OUs is config import correctly: Report --> OUs Report --> Run
 ![OUs Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/OUs-report.png)
 
+You can check it directly from ADDS tool.
 ![AD OUs Check](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-OUs-Check.png)
 
 ### Groups creation
+1. After OUs imported, navigate to Group Tools --> Bulk create groups
+2. Choose Import --> Choose Groups.csv file
+3. Run
+
 ![Groups Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Groups-creation.png)
 
+To see if our csv file and socimp.local Groups is config import correctly: Report --> Groups Report --> All Groups --> Run
 ![Groups Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Groups-report.png)
 
+You can check it directly from ADDS tool.
 ![AD Groups Check](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-Groups-Check.png)
 
 ### Users creation
+1. Last but not least, navigate to User Tools --> Bulk create users
+2. Choose Import --> Choose socimpusers.csv file
+3. Run
+
 ![Users Creation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Users-creation.png)
 
+To see if our csv file and socimp.local Users is config import correctly: Report --> Users Report --> All Users --> Run
 ![Users Report](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Users-report.png)
 
+You can check it directly from ADDS tool, below is example of my SOCIMP's IT Users.
 ![AD User Check Example](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/AD-Users-Check.png)
+
+## Test
+
