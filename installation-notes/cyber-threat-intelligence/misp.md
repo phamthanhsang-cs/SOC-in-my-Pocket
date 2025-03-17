@@ -34,6 +34,7 @@ sudo ./INSTALL.ubuntu2404.sh
 ![Admin account setup](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/misp/misp-login.png)
 
 ### Useful info / Important note
-* Check out [misp's documentation](https://www.misp-project.org/documentation/) for more information
-* For other linux distribution (Debian, RHEL, AlmaLinux, Fedora,etc) or even Ubuntu version under 24.04, gonna need some tinkering, more insight on [MISP Github Install](https://github.com/MISP/MISP)
+* Check out [misp's documentation](https://www.misp-project.org/documentation/) for more information.
+* For other linux distribution (Debian, RHEL, AlmaLinux, Fedora,etc) or even Ubuntu version under 24.04, gonna need some tinkering, more insight on [MISP Github Install](https://github.com/MISP/MISP).
+* In case you can't connect to MISP GUI, change base url on `/var/www/MISP/app/Config/config.php` and also `/etc/apache2/sites-available/misp-ssl.conf` to your own url or IP Address. 
 
