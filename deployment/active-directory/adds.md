@@ -142,4 +142,6 @@ The account details were also verified.
 
 ![Domain User Information](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Test-AD-User-Infor.png)
 
+## Sysmon Deployment via GPO
+
 
