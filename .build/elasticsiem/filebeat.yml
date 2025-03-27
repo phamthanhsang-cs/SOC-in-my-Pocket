@@ -1,0 +1,71 @@
+#Filebeat config for pull logs from iRedMail Server to ElasticSIEM
+# ============================== Filebeat inputs ===============================
+
+filebeat.inputs:
+- type: filestream
+  id: iredmaillog
+  enabled: true
+  paths:
+    - /var/log/mail.log*
+  exclude_files: [".gz$"]
+  fields:
+    log_type: "socimp_mail"
+    mail: true
+  fields_under_root: true 
+  #  level: debug
+  #  review: 1
+#======================= Filebeat (additional) configs ========================
+
+filebeat.config.inputs:
+
+  # Change to true to enable, false to disable
+  enabled: false
+
+  # Glob pattern for configuration loading
+  path: ${path.config}/configs.d/*.yml
+
+# ============================== Filebeat modules ==============================
+
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+
+  # Set to true to enable config reloading
+  reload.enabled: false
+
+
+# ======================= Elasticsearch template setting =======================
+
+setup.template.settings:
+  index.number_of_shards: 1
+
+# ================================== Outputs ===================================
+
+# Configure what output to use when sending the data collected by the beat.
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["https://10.0.2.10:9200"] #THIS MY ELASTICSIEM IP ADDRESS
+
+  # Performance preset - one of "balanced", "throughput", "scale",
+  # "latency", or "custom".
+  preset: balanced
+
+  # Protocol - either `http` (default) or `https`.
+  protocol: "https"
+
+  # Authentication credentials - either API key or username/password.
+  #api_key: --> You could create API Key with correct permission instead of fill elastic credentials to filebeat config file 
+  username: "elastic"
+  password: "<elastic_password>"
+  ssl.certificate_authorities: ["/usr/local/etc/ssl/certs/elastic/http_ca.crt"] # IMPORTANT ! TRANSFER YOUR ELASTIC KEY FROM ELASTIC SIEM TO IREDMAIL SERVER
+
+
+# ================================= Processors =================================
+processors:
+  - add_host_metadata:
+      when.not.contains.tags: forwarded
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+  - add_kubernetes_metadata: ~
+
