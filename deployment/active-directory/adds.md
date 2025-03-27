@@ -178,7 +178,7 @@ And then config your Sysmon Deployment Task.
 Everything seem okay, now i'll back to a above domain joined user - Timmy to see if it worked or not ! 
 
 - Check if Timmy is accessible to Sysmon folder
-- 
+  
 ![sysmon5](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon5.png)
 
 - Check Timmy's Machine Task Scheduler
