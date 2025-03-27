@@ -143,5 +143,54 @@ The account details were also verified.
 ![Domain User Information](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/Test-AD-User-Infor.png)
 
 ## Sysmon Deployment via GPO
+### Preparation
+First, grab those requirement files include:
+- Sysmon excutable file, you can get it from Microsoft - Link: https://download.sysinternals.com/files/Sysmon.zip.
+- Customized Sysmon config, i'm using [OlafHartong's Sysmon config](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/.build/active-directory/olafconfig.xml), you could use SwiftonSecurity or none, whatever you choose.
+- Last but not least is a [batch script](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/.build/active-directory/SysmonDeployment.bat) for Domain joined machine Sysmon setup, because i will deploy it via Task Schedule.
 
+### Setup
+When you already had all those files, put these in a folder, my folder is Sysmon, don't forget to config NTFS for Domain Joined User / Computer with READ PERMISSION - we don't want they change from sysmon.exe to immahackyouforreal.exe or .ps1, right ? 
+![sysmon1](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon1.png)
+Now users can go `\\yourdomain.com\Sysmon` to see all those file, mine is `\\SOCIMP-DC1\Sysmon`, remember the path because we gonna use it for deploy this via Task Schedule.
 
+Open Group Policy Management and create a new GPO, name it and also check the Security Filtering with correct Groups / Users or Computers, i chose SOCIMP\Domain Computers for all of the Machine on my Domain, you might different.
+
+*Let's say, you only want to deploy Sysmon on one of a part of you domain, so you could create a Groups name "Sysmon-Users/Computer" and then add associate Workstation you want to deploy Sysmon and then add it on Security Filtering, so when that GPO applied to the domain, only that "Sysmon-Users/Computer" take effect.*
+
+Open Group Policy Management Editor -> Computer Configuration -> Preferences -> Control Panel Settings -> Scheduled Tasks -> New -> Scheduled Task (At least Windows 7)
+
+And then config your Sysmon Deployment Task.
+
+- General:
+  
+![sysmon2](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon2.png)
+
+- Trigger:
+  
+![sysmon3](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon3.png)
+
+- Action:
+  
+![sysmon4](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon4.png)
+
+### Testing
+Everything seem okay, now i'll back to a above domain joined user - Timmy to see if it worked or not ! 
+
+- Check if Timmy is accessible to Sysmon folder
+- 
+![sysmon5](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon5.png)
+
+- Check Timmy's Machine Task Scheduler
+  
+![sysmon6](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon6.png)  
+
+- Check Timmy's Machine Event Viewer - Sysmon Logs
+  
+![sysmon7](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/active-directory/sysmon7.png)  
+
+## Useful info / Important note
+- To quick apply Policy to Domain Users, run cmd `gpupdate` or `gpupdate /force` on workstation. 
+- If you Scheduled Task run with resulted 0x1, look back to permission configs.
+- Check Task Scheduler and Event Viewer with Administrator Privilege for Testing phase above since we already knew that's the task `Run with highest privileges` and also `NT AUTHORITY\System` User. Also, yeah ! we don't really want user to see the Task and also see Sysmon logs except the Administrative one, right ? 
+  
