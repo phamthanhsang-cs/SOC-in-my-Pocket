@@ -14,9 +14,15 @@ Before issue certificate for SOCIMP Mail Server, there are somethings we need to
   
 - Set hostname correctly in iRedMail Server - 127.0.0.1 mail.socimp.local - For iRedMail installation, you could found it on their [installation guide](https://docs.iredmail.org/install.iredmail.on.debian.ubuntu.html)
 
+- After your Root Certificate Authority setup sucessfully, you must to move the certificate to DC, so any Domain Joined User will have that 
 *So far, Domain user now can go to the brower and type mail.socimp.local and able to access RoundCube WebMail, but get red warning because unauthorized certificate.*
 
 ### Issue Certificate for iRedMail to get away from red warning
 
 
+
+## References
+- [Microsoft Docs - ADCS](https://docs.microsoft.com/en-us/windows-server/identity/ad-cs/)
+- [MITRE ATT&CK - ADCS Exploitation](https://attack.mitre.org/techniques/T1649/)
+- Various security research papers on PKI security
 
