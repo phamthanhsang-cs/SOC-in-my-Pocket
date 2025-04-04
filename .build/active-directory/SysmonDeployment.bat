@@ -17,4 +17,3 @@ If "%ERRORLEVEL%" EQU "1" (
 :installsysmon
 "c:\Sysmon.exe" /accepteula -i c:\olafconfig.xml
 
-.
