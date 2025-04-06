@@ -1,7 +1,5 @@
 <h1 align="center">
-
 Phase 1 - Initial Log Aggregation for Elastic SIEM
-
 </h1>
 
 ## Overview
@@ -19,7 +17,7 @@ This phase detailed initial phase of my SIEM progression - Aggregate logs from S
     - OpenCTI IoCs
 
 ## Setup
-*Note: Because the main goal of this phase is about collect as much logs as possible in the project into SIEM, so i do not refer about indexing, parsing, tuning logs,etc...*
+*Note: Because the main goal of this phase is about collect as much logs as possible in the project into SIEM, so i do not refer about indexing, parsing, tuning logs, etc*
 
 ### Collect logs from Firewall - OPNsense
 The very first data source is Firewall: Filter, VPN, DHCP traffic, etc. 
