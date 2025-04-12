@@ -122,7 +122,7 @@ Since SOCIMP includes essential SOC components designed to deliver comprehensive
 
 **To serve those things, the SOCIMP project is built on a Workstation powered by:**
 - **CPU**: Intel Xeon (18 cores / 36 threads)
-- **RAM**: 96 GB
+- **RAM**: 128 GB
 - **Storage**: 1 TB SSD
 
 This infrastructure hosts multiple VMs and containers, ensuring scalability and performance across all SOC components.
