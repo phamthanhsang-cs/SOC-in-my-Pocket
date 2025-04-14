@@ -26,7 +26,7 @@ The first stop is the firewall. I’m grabbing logs for things like filter traff
 #### How I Did It
 Getting these logs wasn’t too complicated. The pfSense integration in Elastic Agent doesn’t handle Suricata logs, so I had to split things up and bring Filebeat into the mix.
 
-![Firewall Logs Dashboard](/images/elasticsiem/firewalllog.png)
+![Firewall Logs Dashboard](/images/elasticsiem/firewalllog.svg)
 
 Setting up remote logging from OPNsense was pretty straightforward. If you’re curious, you can check out the [OPNsense documentation on logging](https://docs.opnsense.org/manual/settingsmenu.html#logging). 
 
@@ -84,3 +84,7 @@ After some trial and error, I finally got Suricata logs flowing into the SIEM. N
 ![siem7](/images/elasticsiem/firewalllog7.png)
 
 ### Collect Endpoints Logs
+#### Windows Event Logs (Security, Application, Sysmon, etc.)
+After [deploy Sysmon](/deployment/active-directory/adds.md) successfully to all domain-joined users, its time to grab those logs includes common Windows Event logs into SIEM. 
+
+![winevent1](/images/elasticsiem/winevent1.svg)
