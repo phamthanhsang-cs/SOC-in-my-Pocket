@@ -12,6 +12,7 @@ This phase is all about kicking off my SIEM journey by pulling in logs from the 
   - Suricata logs (more on this later!)
 - **Endpoint Logs**:
   - Windows Event Logs (Security, Application, Sysmon, etc.)
+  - Active Directory User Identities for UEBA
   - Postfix Mail Logs
 - **Threat Intelligence**:
   - MISP IoCs
@@ -83,8 +84,15 @@ After some trial and error, I finally got Suricata logs flowing into the SIEM. N
 
 ![siem7](/images/elasticsiem/firewalllog7.png)
 
+So far, so good! I’ve got the common logs sorted out, and Suricata logs are coming in too.
+
 ### Collect Endpoints Logs
 #### Windows Event Logs (Security, Application, Sysmon, etc.)
 After [deploy Sysmon](/deployment/active-directory/adds.md) successfully to all domain-joined users, its time to grab those logs includes common Windows Event logs into SIEM. 
 
 ![winevent1](/images/elasticsiem/winevent1.svg)
+<<<<<<< HEAD
+=======
+
+These could be easily 
+>>>>>>> 1fb45d4 (docs: add case1)
