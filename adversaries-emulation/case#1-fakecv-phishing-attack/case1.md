@@ -26,3 +26,11 @@ A basic [TCP-based C2 server](/adversaries-emulation/case#1-fakecv-phishing-atta
 Kinda fun when talk about why i did those stuffs, initially, I tried using common tools like `msfvenom`, `Hooka`, and `ScareCrow` to bypass Windows Defender but had no success. This led me to develop custom tools, which proved to be more effective and educational.
 
 ## Attack Flow 
+I found out a tool from MITRE which is very cool to visualize workflow - [MITRE DEFEND CAD](https://d3fend.mitre.org/cad/)
+
+Below is my case#1 workflow by using the tool. The left-side the Cyber Kill Chain while the right side is MITRE ATT&CK.
+
+![case1](/images/case1/case1-mitrecad.png)
+
+## Testing 
+Demo video: 
