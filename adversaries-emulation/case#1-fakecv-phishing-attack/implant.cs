@@ -4,7 +4,6 @@
 // The implant can execute basic commands like "whoami", "hostname", "ipconfig", and "systeminfo" and also download and execute files.
 // Instead of using compilied .exe, i use donut to convert it to shellcode and inject it into a legitimate process (e.g: explorer.exe, notepad.exe, etc). 
 
-
 // THIS CODE IS FOR EDUCATIONAL PURPOSES ONLY.
 // DO NOT USE IT FOR MALICIOUS PURPOSES. 
 
@@ -21,7 +20,7 @@ namespace implant
 {
     class Program
     {
-        // XOR encryption/decryption function
+        // XOR encryption / decryption function
         // Used to encrypt and decrypt traffic between the implant and the server
         static string XOR(string data, string key)
         {
