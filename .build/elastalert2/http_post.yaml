@@ -1,8 +1,10 @@
-# This rule forwards all alerts to a n8n instance via HTTP POST. And deduplicates same alert within 5 seconds to reduce noise.
+# This rule forwards all alerts to a n8n instance via HTTP POST. And deduplicates same alert in a host within 5 seconds to reduce noise.
 
 name: "Forward All Elastic Alerts to Shuffle"
 index: .internal.alerts-security.alerts-default-*
 type: any
+
+query_key: host.name
 realert:
   seconds: 5
 
