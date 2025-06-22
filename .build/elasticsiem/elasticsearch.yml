@@ -117,3 +117,7 @@ http.host: 0.0.0.0
 #transport.host: 0.0.0.0
 
 #----------------------- END SECURITY AUTO CONFIGURATION -------------------------
+
+#geo-ip plugins
+ingest.geoip.downloader.eager.download: true
+ingest.geoip.downloader.enabled: true

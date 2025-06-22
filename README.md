@@ -51,8 +51,7 @@
         <li><a href="#adversary-emulation">Adversary Emulation</a></li>
       </ul>
     </li>
-    <li><a href="#incident-response">Incident Response</a></li>
-    <li><a href="#lets-go">Let's go</a></li>
+    <li><a href="#main-parts">Main Parts</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -112,6 +111,7 @@ Since SOCIMP includes essential SOC components designed to deliver comprehensive
 - **EDR**: Elastic Agent, integrated with Elastic Defend, provides robust endpoint detection and response (EDR) capabilities that work seamlessly within the Elastic ecosystem.
 
 - **SOAR**: Tools like **Shuffle**, **TheHive**, and **Cortex** offer high levels of automation, flexibility, and extensive integration across various components for streamlined security operations and incident response.
+*I changed from Shuffle to **n8n** for my SOAR platform*
 
 - **TIP**: **MISP** is a powerful threat intelligence platform that integrates smoothly with TheHive and Cortex for effective incident enrichment. **OpenCTI** enhances this with visually rich dashboards and multiple connectors to gather comprehensive threat intelligence data.
 
@@ -136,35 +136,13 @@ And i also used Parrot-OS
 
 *In the future, I may also explore **[Caldera](https://caldera.mitre.org/)** for more advanced adversary simulation capabilities.*
 
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-## Incident Response
-
-For incident response, I rely on the well-structured **NIST Framework** to handle security incidents effectively. This framework provides a standardized approach, ensuring a thorough and consistent response to potential security threats. Four main stages of the NIST Incident Response Lifecycle:
-
-1. **Preparation** – Establishing and maintaining an incident response capability. This involves creating an incident response policy, identifying resources, and training the response team.
-
-2. **Detection and Analysis** – Monitoring systems to detect suspicious activities and analyzing potential incidents. This stage focuses on identifying and validating incidents accurately to minimize false positives.
-
-3. **Containment, Eradication, and Recovery** – Limiting the impact of the incident, eliminating the root cause, and restoring systems to normal operation. This stage is crucial for controlling the spread and impact of the incident on the organization.
-
-4. **Post-Incident Activity** – Learning from the incident to improve future responses. This involves documenting the incident, conducting a post-mortem analysis, and updating policies and procedures.
-
-See more details on **[NIST Framework Incident Response](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/external-documents/NIST-Framework-for-IR.pdf)**. 
+Also, beside of **[Atomic Red Team](https://atomicredteam.io/)**, i also developed my own simple kill-chains to understand from adversary's perspective
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-
-## Let's Go
+## Main Parts
 
 In the **SOCIMP** project, I will guide you through all stages, starting with **installation notes**, followed by the **deployment** where i *config* and *integrate* all components, **preparation for adversary emulation**, and **threat hunting, analysis, response to security incidents** (blue teaming). 
 
@@ -173,7 +151,7 @@ In the **SOCIMP** project, I will guide you through all stages, starting with **
 * [Installation Notes](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/installation-notes): My setup processes, challenges encountered, and troubleshooting techniques for various components.
 * [Deployment](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/deployment): Procedures for deploying and integrating tools to create a functional SOC infrastructure.
 * [Adversary Emulation](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/adversaries-emulation): How i setting up adversary environments, building attack plans, and replicating real-world behaviors using the MITRE ATT&CK Framework.
-* [Blue Teaming](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/blue-teaming): Processes for monitoring alerts, detecting threats, and responding to incidents. This is the location that you might need to see since its the main part of my project and also **WHY I'M HERE** ! 
+* [Blue Teaming](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/tree/main/blue-teaming): Processes for monitoring alerts, detecting threats, and responding to incidents.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -195,17 +173,13 @@ In the **SOCIMP** project, I will guide you through all stages, starting with **
 ## Contact
 [Pham Thanh Sang](https://www.linkedin.com/in/phamthanhsang0311/) - [@telegram](https://t.me/sangpham0311) - sang3112002@gmail.com
 
-**My Projects:** 
+**My Projects / Write-ups:** 
   - [SOC in my Pocket - SOCIMP](https://github.com/phamthanhsang-cs/SOC-in-my-Pocket)
   - [Boss of the SOC - BOTS](https://github.com/phamthanhsang-cs/Boss-of-the-SOC)
   
 **My Blog site:** https://phamthanhsang-cs.site/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

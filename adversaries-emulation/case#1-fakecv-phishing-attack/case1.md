@@ -32,5 +32,3 @@ Below is my case#1 workflow by using the tool. The left-side the Cyber Kill Chai
 
 ![case1](/images/case1/case1-mitrecad.png)
 
-## Testing 
-Demo video: 

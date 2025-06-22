@@ -1,0 +1,19 @@
+This simple service base on Taylor Walton and a bit config to suitable for my lab enviroment
+
+[Unit]
+Description=Elastalert2 Systemd Service
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/elastalert2
+Environment="SOME_KEY_1=value" "SOME_KEY_2=value2"
+Restart=always
+ExecStart=/usr/bin/python3 -m elastalert.elastalert --verbose --rule /opt/elastalert2/rules/http/http_post.yaml --config config.yaml
+TimeoutSec=60
+
+[Install]
+WantedBy=multi-user.target

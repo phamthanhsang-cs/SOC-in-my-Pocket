@@ -1,0 +1,22 @@
+# This rule forwards all alerts to a n8n instance via HTTP POST. And deduplicates same alert within 5 seconds to reduce noise.
+
+name: "Forward All Elastic Alerts to Shuffle"
+index: .internal.alerts-security.alerts-default-*
+type: any
+realert:
+  seconds: 5
+
+alert:
+  - post2
+
+http_post2_url: "<n8n_webhook_url>"
+http_post2_ignore_ssl_errors: True
+
+# This sends the full match JSON body
+#http_post2_payload: _data
+http_post2_all_values: True
+
+
+# Required for JSON parsing
+headers:
+  Content-Type: "application/json"
