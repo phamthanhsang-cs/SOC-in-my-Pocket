@@ -67,11 +67,21 @@
 </div>
 
 <div align="center"> 
-  Bird's Eye View of my SOC Infrastructure (Dec/2024)
+  Bird's Eye View of my SOC Infrastructure (June/2025)
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<div align="center"> 
+  <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/proposals/Automation-Workflow-1.svg" alt="screenshot" />
+</div>
+
+<div align="center"> 
+  Incident Handling Workflow (June/2025)
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Implement With
