@@ -1,5 +1,6 @@
 This simple service base on Taylor Walton and a bit config to suitable for my lab enviroment
 
+```ini
 [Unit]
 Description=Elastalert2 Systemd Service
 After=syslog.target
@@ -17,3 +18,4 @@ TimeoutSec=60
 
 [Install]
 WantedBy=multi-user.target
+```

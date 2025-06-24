@@ -91,3 +91,4 @@ So far, so good! I’ve got the common logs sorted out, and Suricata logs are co
 After [deploy Sysmon](/deployment/active-directory/adds.md) successfully to all domain-joined users, its time to grab those logs includes common Windows Event logs into SIEM. 
 
 ![winevent1](/images/elasticsiem/winevent1.svg)
+

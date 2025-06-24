@@ -13,8 +13,6 @@ For this project, penetration testing is limited to two key networks: Servers Ar
 3. [Penetration Testing Considerations](#socimp-penetration-testing-considerations)
 4. [Known Exceptions](#known-exceptions)
 
-
-
 ## General Principles
 - **Zero Trust Policy:** Default all traffic to `DENY` unless explicitly allowed.
 - **Least Privilege Access:** Only the necessary ports and protocols are opened.
