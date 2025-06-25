@@ -84,6 +84,38 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<div align="center"> 
+  <img src="/images/proposals/slack_notification_example.png" alt="screenshot" />
+</div>
+
+<div align="center"> 
+  Incident Case notification via Slack
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<div align="center"> 
+  <img src="/images/proposals/case_example.png" alt="screenshot" />
+</div>
+
+<div align="center"> 
+  TheHive Case information, enriched by AI
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<div align="center"> 
+  <img src="/images/proposals/ai_interaction_example.png" alt="screenshot" />
+</div>
+
+<div align="center"> 
+  RAG-knowledegebase assistant integration
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Implement With
 
 [![OPNSense][OPNSense]][OPNSense-url]
