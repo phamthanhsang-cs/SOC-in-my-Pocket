@@ -63,7 +63,7 @@
 ## About The Project
 
 <div align="center"> 
-  <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/proposals/birdseyeview.jpg" alt="screenshot" />
+  <img src="https://github.com/phamthanhsang-cs/SOC-in-my-Pocket/blob/main/images/proposals/birdseyeview.png" alt="screenshot" />
 </div>
 
 <div align="center"> 
