@@ -1,6 +1,5 @@
-<h1 align="center">
-Phase 1 - Initial Log Aggregation for Elastic SIEM
-</h1>
+# Phase 1 - Initial Log Aggregation for Elastic SIEM
+
 
 ## Overview
 This phase is all about kicking off my SIEM journey by pulling in logs from the SOCIMP infrastructure. The idea is to get as many logs as possible into Elastic SIEM to start building a centralized logging system. Here’s what I’m working with:
