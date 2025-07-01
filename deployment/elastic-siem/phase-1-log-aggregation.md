@@ -92,3 +92,5 @@ After [deploy Sysmon](/deployment/active-directory/adds.md) successfully to all 
 
 ![winevent1](/images/elasticsiem/winevent1.svg)
 
+By take advantages of new Elastic architecture, through Fleet and Elastic Agent, deploy data acquisition arcross project is like a piece of cake. 
+
