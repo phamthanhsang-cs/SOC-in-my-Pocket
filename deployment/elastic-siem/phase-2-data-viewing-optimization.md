@@ -2,7 +2,7 @@
 
 ## Overview
 
-After collecting logs from various sources—such as network devices (firewall traffic, IDS) and endpoints (syslog, Windows event logs, EDR)—it is essential to categorize these logs for better visibility and to reduce noise. Without proper structuring, analyzing this data becomes overwhelming and inefficient.
+After collecting logs from various sources-such as network devices (firewall traffic, IDS) and endpoints (syslog, Windows event logs, EDR)-it is essential to categorize these logs for better visibility and to reduce noise. Without proper structuring, analyzing this data becomes overwhelming and inefficient.
 
 ## Setup
 
@@ -83,7 +83,7 @@ These custom Data Views significantly improve the querying and analysis experien
 
 ## Testing
 
-For example, suppose you want to query Sysmon data. Below is what the Kibana view looked like **before** setting up custom Data Views — over **20,000** documents:
+For example, suppose you want to query Sysmon data. Below is what the Kibana view looked like **before** setting up custom Data Views - over **20,000** documents:
 
 ![pic10](/images/elasticsiem/pic10.png)
 
