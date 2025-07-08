@@ -40,7 +40,7 @@ Below is my Case #1 workflow visualized using the tool. The left side represents
 
 ### Infrastructure Preparation
 
-<video controls src="/images/case1/adversary-infra-prep.mp4" title="infra-prep"></video>
+<video src="/images/case1/adversary-infra-prep.mp4"></video>
 
 From the attacker’s perspective, a few components need to be prepared:
 - The C2 channel - a simple TCP server listening on port 31102.
@@ -62,9 +62,9 @@ This machine is fully protected by Microsoft Defender.
 
 The following video demonstrates how the Dropper operates from the victim's point of view, leading to a compromise - all while bypassing native Defender protections.
 
-<video controls src="/images/case1/dropper-execution.mp4" title="dropper-execution"></video>
+<video src="/images/case1/dropper-execution.mp4"></video>
 
 This video shows how the attacker gains a reverse shell after the user clicks the malicious file and is able to run remote commands without being flagged by Defender.
 
-<video controls src="/images/case1/run-command-wo-detected.mp4" title="run-command-remotely"></video>
+<video src="/images/case1/run-command-wo-detected.mp4"></video>
 
