@@ -1,6 +1,6 @@
 # CASE #1 - Simulated Phishing-Based Targeted Attack
 
-Jason Muir, an HR staff member at SOCIMP Company, receives an email from a candidate applying for a SOC Analyst position. The email contains a password-protected ZIP file with the candidate's résumé and portfolio. 
+Jason Muir, an HR staff member at SOCIMP Company, receives an email from a candidate applying for a SOC Analyst position. The email contains a password-protected ZIP file with the candidate's résumé and portfolio.
 
 In this simulation, I crafted a realistic phishing attack to mimic common real-world scenarios.
 
@@ -23,12 +23,48 @@ Both the Dropper and Implant were obfuscated using **ConfuserEx** to make static
 A basic [TCP-based C2 server](/adversaries-emulation/case#1-fakecv-phishing-attack/tcp_c2_server.py) was implemented in Python to communicate with the implant.
 
 ## Why Custom Tools?
-Kinda fun when talk about why i did those stuffs, initially, I tried using common tools like `msfvenom`, `Hooka`, and `ScareCrow` to bypass Windows Defender but had no success. This led me to develop custom tools, which proved to be more effective and educational.
 
-## Attack Flow 
-I found out a tool from MITRE which is very cool to visualize workflow - [MITRE DEFEND CAD](https://d3fend.mitre.org/cad/)
+This part was actually fun. Initially, I tried using popular tools like `msfvenom`, `Hooka`, and `ScareCrow` to bypass Windows Defender-but none of them worked reliably in my test environment. That pushed me to develop custom tools from scratch, which turned out to be both more effective and educational.
 
-Below is my case#1 workflow by using the tool. The left-side the Cyber Kill Chain while the right side is MITRE ATT&CK.
+## Attack Flow
+
+I found a great tool from MITRE to visualize attack workflows - [MITRE DEFEND CAD](https://d3fend.mitre.org/cad/)
+
+Below is my Case #1 workflow visualized using the tool. The left side represents the Cyber Kill Chain, while the right side aligns with MITRE ATT&CK.
 
 ![case1](/images/case1/case1-mitrecad.png)
+
+## Testing
+
+**IMPORTANT NOTE**: *As of July 2025, my sample has been detected on some Endpoints by Microsoft Defender - probably because I uploaded it to VirusTotal and Hybrid Analysis. Microsoft's Threat Intel team stays on top of these things and regularly updates Defender signatures.*
+
+### Infrastructure Preparation
+
+<video controls src="../../images/case1/adversary-infra-prep.mp4" title="infra-prep"></video>
+
+From the attacker’s perspective, a few components need to be prepared:
+- The C2 channel - a simple TCP server listening on port 31102.
+- A file transfer channel - a basic HTTP server listening on port 8888.
+- A fake application email sent to the victim.
+
+![pic1](/images/case1/pic1.png)
+
+### Target: Standard Windows Workstation Protected by Microsoft Defender
+
+Now we're on the machine of Jason Muir, a user in the SOCIMP domain, who received and opened the malicious ZIP file.
+
+![pic2](/images/case1/pic2.png)
+
+This machine is fully protected by Microsoft Defender.
+
+![pic3](/images/case1/pic3.png)
+![pic4](/images/case1/pic4.png)
+
+The following video demonstrates how the Dropper operates from the victim's point of view, leading to a compromise - all while bypassing native Defender protections.
+
+<video controls src="../../images/case1/dropper-execution.mp4" title="dropper-execution"></video>
+
+This video shows how the attacker gains a reverse shell after the user clicks the malicious file and is able to run remote commands without being flagged by Defender.
+
+<video controls src="../../images/case1/run-command-wo-detected.mp4" title="run-command-remotely"></video>
 
